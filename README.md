@@ -4,6 +4,7 @@ Authors : Hurbain J. , Thommen Q. , Pfeuty B.
 
 
 %%%%%%%%%%%%%%%%%%
+
 13C_Analysis :
 simu13C_MCMC.m : Main algorithm to compute MCMC with SSA-13C MFA (https://arxiv.org/pdf/2201.00663.pdf).
 simu13C_score.m : Return score function depending of a flux vector.
@@ -18,6 +19,7 @@ simu13C_mijcalc.m : Compute the mass isotopomer distribution from the matrix met
 
 
 %%%%%%%%%%%%%%%%%%
+
 Genetic_Algo :
 simuDetox_AlgoGene.m : Main algorithm to compute Genetic algorithm.
 simuDetox_reso.m : Function including the system of equations.
@@ -30,6 +32,7 @@ simuDetox_score.m : Return a score depending of a parameter vector.
 
 
 %%%%%%%%%%%%%%%%%%
+
 MCMC :
 simuDetox_MCMC.m : Main algorithm to compute MCMC with a SSA-13C MFA.
 simuDetox_reso.m : Function including the system of equations.
@@ -42,6 +45,7 @@ simuDetox_score.m : Return a score depending of a parameter vector.
 
 
 %%%%%%%%%%%%%%%%%%
+
 Regulation-Enzyme_Analysis :
 simuDetox_DoseRespKO.m : Compute all Dose Responses, Regulation analysis.
 simuDetox_AnaParamFull.m : Compute all Enzymes knockdown/activation with a dose response.
@@ -55,12 +59,3 @@ Complete Enzyme parameter analysis :
 - Initiate a file dataname1 which is the set of parameters to test and dataname2 which is a file of initial condition for each set of parameters.
 - Run the function simuDetox_AnaParamFull(KOpar) where KOpar is the enzyme parameter to analyse. It takes values from 1 to 3 where 1 is for kg6pd, 2 for k6pgd and 3 for ktkt11.
 - It returns files with results at 5min or 30min after stress. For instance, modifying k6pgd while create "dataname1_APF_5m_6pgd_x.dat" where x is the number of the value tested during the algorithm.
-
-
-
-
-
-
-
-
-
