@@ -1,4 +1,4 @@
-function [Result,score_vec,score_std] = simuDetox_AlgoGene(param0)
+function [Result,score_vec,score_std] = simuDetox_AlgoGene()
 %Param optimisation
 % Opti_genet
 
