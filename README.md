@@ -53,3 +53,6 @@ The repository includes four folders:
 3) Returns files `dataname1_APF_Xm_Y_Z.dat` with results at `X` min after stress, by modifying the parameter `Y`, where `Z` is the number of the tested value.
 
 ## Data
+- `mcmcpar_100k.zip` is the compressed file of `mcmcpar_100k.dat` which contains the core parameter sets obtained by parameter sampling and analyzed in Figures 4-7.
+- `mcmcfpb_100k.zip` is the compressed file of `mcmcfpb_100k.dat` which contains the metabolite concentration at steady state in basal condition corresponding to the parameter sets in `mcmcpar_100k.dat`.
+- `mcmcfbs_100k.zip` is the compressed file of `mcmcfpb_100k.dat` which contains the metabolite concentration at steady state in stress condition corresponding to the parameter sets in `mcmcpar_100k.dat`.
