@@ -14,12 +14,15 @@ The repository includes four folders:
 - `simu13C_react.m` applies reaction on the matrix meta. 
 - `simu13C_mijcalc.m` computes the mass isotopomer distribution from the matrix meta
 - `mcmc_xxx_reorder.dat` initial guess for the flux vector
+- `simu13C_MijFromFluxes.m` computes the mass isotopomer distribution from flux set in `mcmc_xxx_reorder.dat` and save in file `MIJdistri_XXX_full.dat`
+- `simu13C_plotmij.m` uses `MIJdistri_XXX_full.dat` as input to produce a plot of the mass isotopomer distribution
 
 *Procedure to generate the data for Figures 2 and S2*
 1) Initiate files `mcmc_xxx_reorder.dat` containing the initial guess for the flux vector.
 2) Run `simu13C_MCMC` (manip,iniguess) where manip is set to 1 or 2 for basal or stress simulation and iniguess is the number line of initial flux condition.
 3) Return `Result_MCMC_ ... .dat`  that is the list of accepted flux vectors accepted during MCMC.
-(WHAT  ABOUT MIJ DATA FOR FIGURE S2?)
+4) Run `simu13C_MijFromFluxes.m` to produce the mass isotopomer distribution file `MIJdistri_XXX_full.dat` from the list of accepted flux vectors (uses `mcmc_xxx_reorder.dat` by default, can be changed in dataname0)
+5) Run `simu13C_plotmij.m` to plot the mass isotopomer distribution fit in Figures S2-C&D.
 
 ## Parameter_sampling
 - `simuDetox_AlgoGene.m` implements the genetic algorithm
