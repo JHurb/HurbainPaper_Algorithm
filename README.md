@@ -5,7 +5,7 @@ The repository includes four folders:
 - `13C_MFA` contains code scripts to generate results of Figures 2 and S2
 - `Parameter_sampling` contains code scripts used for parameter exploration (genetic algorithm) and estimation (MCMC) of the kinetic model to generate Figures 3 and S3.
 - `Model_analysis` contains code scripts to generate results of Figures 4-7 and S4-S7
-- `data` contains the core parameter set obtained by parameter sampling and analyzed in Figures 4-7
+- `Data` contains the core parameter set obtained by parameter sampling and analyzed in Figures 4-7
 # Content
 ## 13C_MFA
 - `simu13C_MCMC.m` performs MCMC with the SSA-13CMFA algorithm (https://arxiv.org/pdf/2201.00663.pdf)
@@ -29,7 +29,7 @@ The repository includes four folders:
 - `simuDetox_MCMC.m` implements the MCMC sampling algorithm
 - `simuDetox_reso.m` describes the differential equation system of the metabolic network
 - `simuDetox_Iinput.m` defines the temporal dynamics of H2O2 and Glucose inputs
-- `simuDetox_score.m` returns the RMSE score (Eq. X)
+- `simuDetox_score.m` returns the RMSE score (Eq. 9)
 
 *Procedure to generate the data for Figure 3*
 1) Initiate a parameter vector param0 as initial guess. It is initiated from each parameters values after "If start from a given param vector". To start from a parameter vector from a `file.dat`, comment param0, uncomment lines 20-27 and modify dataname as the name of the file without ".dat"
@@ -50,4 +50,6 @@ The repository includes four folders:
 *Procedure to generate the data for Figures 6-7 and S6-S7*
 1) Initiate a file `dataname1` for the parameter set to test and `dataname2` for the corresponding set of initial conditions
 2) Run `simuDetox_AnaParamFull(KOpar)` where KOpar is the enzyme parameter to analyse. It takes values from 1 to 3 where 1 is for kg6pd, 2 for k6pgd and 3 for ktkt11.
-3) Returns files `dataname1_APF_Xm_Y_Z.dat` with results at `X` min after stress, by modifying the parameter `Y`, where `Z` is the number of the tested value (?)
+3) Returns files `dataname1_APF_Xm_Y_Z.dat` with results at `X` min after stress, by modifying the parameter `Y`, where `Z` is the number of the tested value.
+
+## Data
