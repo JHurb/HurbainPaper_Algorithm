@@ -4,8 +4,9 @@ This repository contains the Matlab scripts allowing to generate the figures of 
 The repository includes four folders:
 - `13C_MFA` contains code scripts to generate results of Figures 2 and S2
 - `Parameter_sampling` contains code scripts used for parameter exploration (genetic algorithm) and estimation (MCMC) of the kinetic model to generate Figures 3 and S3.
-- `Model_analysis` contains code scripts to generate results of Figures 4-7 and S4-S7
-- `Data` contains the core parameter set obtained by parameter sampling and analyzed in Figures 4-7
+- `Model_analysis` contains code scripts to generate results of Figures 4-7 and S4-S7.
+- `Data` contains the core parameter set obtained by parameter sampling and analyzed in Figures 4-7.
+- `Model_example` contains SBML and Copasi file of the model using a parameter set from 'Data'.
 # Content
 ## 13C_MFA
 - `simu13C_MCMC.m` performs MCMC with the SSA-13CMFA algorithm (https://arxiv.org/pdf/2201.00663.pdf)
@@ -56,3 +57,7 @@ The repository includes four folders:
 - `mcmcpar_100k.zip` is the compressed file of `mcmcpar_100k.dat` which contains the core parameter sets obtained by parameter sampling and analyzed in Figures 4-7.
 - `mcmcfpb_100k.zip` is the compressed file of `mcmcfpb_100k.dat` which contains the metabolite concentration at steady state in basal condition corresponding to the parameter sets in `mcmcpar_100k.dat`.
 - `mcmcfbs_100k.zip` is the compressed file of `mcmcfpb_100k.dat` which contains the metabolite concentration at steady state in stress condition corresponding to the parameter sets in `mcmcpar_100k.dat`.
+
+## Model_example
+- `22-03-17_MODEL.xml` is SBML file of the model using a parameter set from `mcmcpar_100k.dat`
+- `22-03-17_MODEL.cps` is Copasi file of the model using a parameter set from `mcmcpar_100k.dat`
