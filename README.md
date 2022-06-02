@@ -13,7 +13,7 @@ The repository includes four folders:
 - `simu13C_meta.m` initiates a 3d matrix "meta" with all metabolite simulated (number of molecules x maximum number of carbon x number of metabolites). 
 - `simu13C_react.m` applies reaction on the matrix meta. 
 - `simu13C_mijcalc.m` computes the mass isotopomer distribution from the matrix meta
-- `mcmc_xxx_reorder.dat` initial guess for the flux vector
+- `mcmc_xxx_reorder.dat` initial guess for the flux vector, (xxx = basal or stress)
 - `simu13C_MijFromFluxes.m` computes the mass isotopomer distribution from flux set in `mcmc_xxx_reorder.dat` and save in file `MIJdistri_XXX_full.dat`
 - `simu13C_plotmij.m` uses `MIJdistri_XXX_full.dat` as input to produce a plot of the mass isotopomer distribution
 
