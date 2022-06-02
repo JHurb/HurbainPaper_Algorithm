@@ -57,9 +57,6 @@ else
     score_min=6.2;
 end
 
-% param_minsc_ctrl=3.99*rand(1,11)+0.01;%Result INCA[4 4 1.478 4 0.3 4 0.15 1 1 1 0.9]; % Flux pour meilleur score 10.^[0.362 0.602 0.130 0.176 -1.046 -1 -1 -1.155 -1.155 -1.155 -1.3979]
-% param_minsc_stre=3.99*rand(1,11)+0.01;%Result INCA[0.42 1.22 0.60 4 1.14 3.6 3.7 1 1 1 0.72];%[-0.301 0.602 -0.137 -0.602 -0.071 -0.071 -0.071 -0.602 -0.602 -0.602 -0.0915]; % Flux pour meilleur score
-% score_min=5;% score pour meilleur score save en 
 
 if manip==1
     %Basal/ctrl
