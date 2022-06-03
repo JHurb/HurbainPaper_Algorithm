@@ -38,7 +38,7 @@ gapd=(aldp-aldm)+(tkt1p-tkt1m)+(tpip-tpim);
 flows=[Fglu gpip gpim pfkp pfkm aldp aldm tpip tpim g6pd pgd rpep rpem rpip rpim tkt1p tkt1m talp talm tkt2p tkt2m prpps gapd];    
 % flows_dege=[gpip-gpim,pfkp-pfkm,aldp-aldm,tpip-tpim,rpep-rpem,rpip-rpim,tkt1p-tkt1m,talp-talm,tkt2p-tkt2m];   
 
-if any(flows<0)==1 % exit if wrong flow
+if any(flows<=-2e-4)==1 % exit if wrong flow
     score=1e5;
     mij=0;mij_SS=0;
     return
