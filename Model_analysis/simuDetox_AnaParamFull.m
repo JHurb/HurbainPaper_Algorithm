@@ -2,11 +2,11 @@ function simuDetox_AnaParamFull(KOpar)
 %Analysis Dose response + param
 tic
 
-dataname1='mcmcparsmall';
+dataname1='mcmcpar_100k';
 Result_brut=dlmread(strcat(dataname1,'.dat'),' ',1,0);
 
 
-dataname2='mcmcfpbsmall';
+dataname2='mcmcfpb_100k';
 Result_IC=dlmread(strcat(dataname2,'.dat'),' ',1,0);
 param_Benjorder=[15 17 16 2 8 9 10 12 11 14 13 1 3 4 5 6];
 Result_ic_brut=Result_IC(:,param_Benjorder);
